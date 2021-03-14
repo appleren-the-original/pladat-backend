@@ -1,0 +1,21 @@
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+*.code-workspace
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
+.DS_Store
+
+
+### virtual environment ###
+env381
+Pipfile
+pladat_backend
+
+### all pycache folders ###
+**/__pycache__

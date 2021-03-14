@@ -1,0 +1,138 @@
+{
+    "name": "mur boz",
+    "email": "kfbn@gmail.com",
+    "password1": "123456",
+    "password2": "123456",
+    "user_type": "student",
+    "user_type_specifics": { "school": "itu", "department": "ceng", "grade" :3}
+}
+
+
+{
+    "name": "zey boz",
+    "email": "zeynep@gmail.com",
+    "password1": "picasso123",
+    "password2": "picasso123",
+    "user_type": "student",
+    "user_type_specifics": { "school": "itu", "department": "ceng", "grade" :3}
+}
+
+{
+    "name": "emir oz",
+    "email": "emiroz@gmail.com",
+    "password1": "emiroz123",
+    "password2": "emiroz123",
+    "user_type": "student",
+    "user_type_specifics": { "school": "mimar sinan", "department": "tarih", "grade" :1}
+}
+
+{
+    "name": "huseyin",
+    "email": "huso123@gmail.com",
+    "password1": "huso1234",
+    "password2": "huso1234",
+    "user_type": "student",
+    "user_type_specifics": { "school": "galasatasaray", "department": "hukuk", "grade" :2}
+}
+
+
+
+
+{
+    "name": "alp eren",
+    "email": "alperen@gmail.com",
+    "password1": "emiroz123",
+    "password2": "emiroz123",
+    "user_type": "student",
+    "user_type_specifics": { "school": "mimar sinan", "department": "tarih", "grade" :1}
+}
+
+{
+    "name": "deniz ruzgar",
+    "email": "deniz@gmail.com",
+    "password1": "ekmeksu12",
+    "password2": "ekmeksu12",
+    "user_type": "student",
+    "user_type_specifics": { "school": "itu", "department": "ceng", "grade" :3}
+}
+
+
+{
+    "name": "bartu k",
+    "email": "bartu@gmail.com",
+    "password1": "123456ekmek",
+    "password2": "123456ekmek",
+    "user_type": "student",
+    "user_type_specifics": { "school": "boun", "department": "language", "grade" :4}
+}
+
+{
+    "name": "Koç A.ş",
+    "email": "koc@info.com",
+    "password1": "123456koc",
+    "password2": "123456koc",
+    "user_type": "employer",
+    "user_type_specifics": { "profession": "software"}
+}
+
+{
+    "name": "Sabancıyazılım",
+    "email": "sabanciyazilim@info.com",
+    "password1": "123456sab",
+    "password2": "123456sab",
+    "user_type": "employer",
+    "user_type_specifics": { "profession": "software"}
+}
+
+
+{
+    "name": "mel ar",
+    "email": "meltem@gmail.com",
+    "password1": "meltem123",
+    "password2": "meltem123",
+    "user_type": "student",
+    "user_type_specifics": { "school": "boun", "department": "ceng", "grade" :3}
+}
+git reset --hard origin/dev
+
+{
+    "name": "Dalga hukuk",
+    "email": "dalgahuk@info.com",
+    "password1": "dalga123",
+    "password2": "dalga123",
+    "user_type": "employer",
+    "user_type_specifics": { "profession": "law"}
+}
+
+
+
+'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "new_pladat",
+        "USER": "postgres",
+        "PASSWORD": "ekmek",
+        "HOST": "127.0.0.1",
+        "PORT": 5432,
+    }
+
+
+
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': "vjxbiuft",
+        "USER": "vjxbiuft",
+        "PASSWORD": "LakkRld582jNzk6jQ3grcpNei3RowNbE",
+        "HOST": "suleiman.db.elephantsql.com",
+        "PORT": 5432,
+    }
+class LogoutView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    def post(self, request):
+        try:
+            refresh_token = request.data["refresh_token"]
+            token = RefreshToken(refresh_token)
+            token.blacklist()
+            return Response("Successful Logout", status=status.HTTP_200_OK)
+        except Exception as e:
+            return Response(status=status.HTTP_400_BAD_REQUEST)

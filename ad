@@ -1,0 +1,63 @@
+* [33m7aea3ac[m[33m ([m[1;36mHEAD[m[33m, [m[1;31morigin/dev[m[33m)[m apply view auth tests
+* [33m885d9d4[m skill list
+* [33m0ddb670[m latest
+*   [33mf3db2a2[m Merge branch 'authentication_deneme' into dev
+[32m|[m[33m\[m  
+* [33m|[m [33m6d57799[m change skill list return type
+* [33m|[m [33m34a786e[m update requirements - corsheaders
+* [33m|[m [33mfed1b9b[m corsheaders has been added to get rid of CORS policy errors
+* [33m|[m [33mc3afddc[m add placement_apply_view
+* [33m|[m [33mfcda4de[m user registration corrected (employer and student user types)
+* [33m|[m [33ma3e633b[m Serializer and View function for user registration
+* [33m|[m [33m4fad614[m birthday field set to permit null
+* [33m|[m   [33m79c256e[m Merge branch 'dev' of http://160.75.154.12/bitbucket/scm/gr22/pladat-backend into dev
+[34m|[m[35m\[m [33m\[m  
+* [35m|[m [33m|[m [33m005800f[m update views user foreignkey fix
+[35m|[m [35m|[m [33m|[m * [33mbb60692[m[33m ([m[1;31morigin/authentication_deneme[m[33m)[m change skill list return type (again)
+[35m|[m [35m|[m [33m|[m[33m/[m  
+[35m|[m [35m|[m * [33ma53f273[m is_student is added.
+[35m|[m [35m|[m * [33mdd73d73[m database problems are solved
+[35m|[m [35m|[m * [33me990567[m requirements2.txt is added.
+[35m|[m [35m|[m * [33mc0ee8bb[m try
+[35m|[m [35m|[m * [33m24d5ca0[m login is done
+[35m|[m [35m|[m * [33m795f9f7[m login with errors
+[35m|[m [35m|[m * [33mc967a57[m registration is done
+[35m|[m [35m|[m * [33m2a58bb0[m create abstract user and jwt token
+[35m|[m [35m|[m * [33m3a30b8a[m start_jwt
+[35m|[m [35m|[m * [33m06d974b[m add lib
+[35m|[m [35m|[m * [33mca6eeb0[m branch
+[35m|[m [35m|[m[35m/[m  
+[35m|[m * [33m1cac3bb[m delete_some_items
+[35m|[m[35m/[m  
+* [33m76e1c04[m update view functions
+* [33m43e57b7[m update readme
+* [33m455675e[m add id field to all serializer classes
+* [33m285fd48[m update requirements, create README
+* [33m4cce338[m correction of str error
+* [33ma7d8ac7[m correction of str error
+* [33md2ffbb4[m auth migrat
+* [33mfc56944[m __str__ updated
+* [33m7b027c6[m __str__ created
+* [33md5f3bf1[m skill_levels field changed to charfield and skills can now be serialized and displayed in the views
+* [33ma097102[m Student, Placement, Employer list views
+* [33mb0ea3b4[m Student, Employer, Placement detail views are ready
+* [33md23f28f[m Student, Employer, Placement, Category Serializers completed (except skills)
+* [33m8173f43[m some unique and Null field changes
+* [33m20cb9ca[m initialize api view functions and urls
+* [33m38f7814[m __str__ method for category model
+* [33m06eb3c6[m Timezone corrected and default admin interface added for all pladat.models
+* [33m6008b97[m gitignore update
+* [33mc07caab[m Birthday update
+* [33md340d56[m some_commands
+* [33mfbd82c8[m[33m ([m[1;31morigin/feature/create_serializer_classes[m[33m)[m move pladat app folder, update some model class fields, add pycache to gitignore file.
+* [33m884242c[m general structure for student serializer
+* [33mf182797[m change in ImageFields and upload paths
+* [33m9357f64[m added pladat app to settings.INSTALLED_APPS (makemigrations does not work)
+* [33me8ccf63[m some ManyToMany are changed to ForeignKey, added on_delete to ForeignKeys
+* [33m5b9268a[m initialize user serializers
+* [33mb42d54e[m initialize user serializers
+* [33mdf9f5f5[m[33m ([m[1;31morigin/feature/create_model_classes[m[33m)[m added upload_to parameters
+* [33m5c0e45d[m filled in model classes
+* [33m22c96de[m model class names
+* [33m989e233[m update gitignore
+* [33m0a5bdb3[m[33m ([m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmaster[m[33m)[m initial commit
